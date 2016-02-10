@@ -1,0 +1,34 @@
+q:\learning\Lesson_1\Frame_5>dir
+ Содержимое папки q:\learning\Lesson_1\Frame_5
+10.02.2016  11:33    <DIR>          .
+10.02.2016  11:33    <DIR>          ..
+10.02.2016  11:33               437 GreetingService.java
+08.02.2016  10:47                54 MANIFEST.MF
+               2 файлов            491 байт
+               2 папок  73 344 552 960 байт свободно
+
+q:\learning\Lesson_1\Frame_5>javac GreetingService.java
+
+q:\learning\Lesson_1\Frame_5>dir
+ Содержимое папки q:\learning\Lesson_1\Frame_5
+
+10.02.2016  11:34    <DIR>          .
+10.02.2016  11:34    <DIR>          ..
+10.02.2016  11:34               836 GreetingService.class
+10.02.2016  11:33               437 GreetingService.java
+08.02.2016  10:47                54 MANIFEST.MF
+               3 файлов          1 327 байт
+               2 папок  73 344 548 864 байт свободно
+
+q:\learning\Lesson_1\Frame_5>jar cvfm gs.jar MANIFEST.MF GreetingService.class
+added manifest
+adding: GreetingService.class(in = 836) (out= 533)(deflated 36%)
+
+q:\learning\Lesson_1\Frame_5>java -jar gs.jar
+Mistake. You need to add one parameter "Your Name" after end of the line!!!
+Example: "java GreetingSrvice Alex"
+
+q:\learning\Lesson_1\Frame_5>java -jar gs.jar alex
+Hello alex
+
+Nice to meet you...
